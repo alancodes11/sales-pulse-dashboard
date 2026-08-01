@@ -1,20 +1,13 @@
-import React, { useState } from 'react';
-import { Header } from '../components/Header';
-import { KPICards } from '../components/KPICard';
-import { ExecutiveSummary } from '../components/ExecutiveSummary';
-import { DailyLeaderboard } from '../components/DailyLeaderboard';
-import { TopDestinationsWidget } from '../components/TopDestinationsWidget';
-import { SalesCharts } from '../components/SalesCharts';
-import { OrdersTable } from '../components/OrdersTable';
-import { SupabaseConnectModal } from '../components/SupabaseConnectModal';
-import { useSalesData, TimeRangeFilter } from '../hooks/useSalesData';
-import {
-  AlertTriangle,
-  RefreshCw,
-  PackageCheck,
-  Zap,
-} from 'lucide-react';
-import { getSupabaseConfig } from '../lib/supabase';
+import { Header } from './Header';
+import { KPICards } from './KPICard';
+import { ExecutiveSummary } from './ExecutiveSummary';
+import { DailyLeaderboard } from './DailyLeaderboard';
+import { TopDestinationsWidget } from './TopDestinationsWidget';
+import { SalesCharts } from './SalesCharts';
+import { OrdersTable } from './OrdersTable';
+import { SupabaseConnectModal } from './SupabaseConnectModal';
+import { useSalesData, TimeRangeFilter } from './useSalesData';
+import { getSupabaseConfig } from './supabase';
 
 export const Dashboard: React.FC = () => {
   const [timeFilter, setTimeFilter] = useState<TimeRangeFilter>('7d');
