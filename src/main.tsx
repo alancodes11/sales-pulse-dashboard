@@ -1,16 +1,10 @@
-App.tsx
-DailyLeaderboard.tsx
-Dashboard.tsx
-ExecutiveSummary.tsx
-Header.tsx
-KPICard.tsx
-OrdersTable.tsx
-SalesCharts.tsx
-Sidebar.tsx
-SupabaseConnectModal.tsx
-TopDestinationsWidget.tsx
-database.ts
-index.css
-main.tsx
-supabase.ts
-useSalesData.ts
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
+import './index.css';
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);
