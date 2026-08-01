@@ -1,0 +1,6 @@
+{
+  "name": "Travel SIM Sales Dashboard",
+  "description": "Live sales analytics and performance monitoring dashboard for Travel SIM orders backed by Supabase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
